@@ -1,0 +1,5 @@
+Etiqueta,# Muestras,Media,Mín,Máx,Desv. Estándar,% Error,Rendimiento,Kb/sec,Sent KB/sec,Media de Bytes
+Obtener Pacientes,200,2,1,8,"1,09","0,000%","67,04660","1290,18","11,59","19704,9"
+Crear Pacientes,200,3,2,11,"1,00","0,000%","67,06908","20,37","22,60","311,0"
+Obtener Registros,200,1,0,3,"0,47","0,000%","67,15917","11,41","11,61","174,0"
+Total,600,2,0,11,"1,35","0,000%","200,87044","1320,17","45,71","6730,0"
