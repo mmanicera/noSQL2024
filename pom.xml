@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.3.5</version>
+		<version>3.3.5</version> <!-- Versión de Spring Boot -->
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.gestion.medica</groupId>
@@ -26,9 +26,12 @@
 		<tag/>
 		<url/>
 	</scm>
+
 	<properties>
 		<java.version>17</java.version>
+		<spring-boot.version>3.3.5</spring-boot.version> <!-- Definición de la versión de Spring Boot -->
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -38,7 +41,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -47,12 +49,20 @@
 	</dependencies>
 
 	<build>
+		<finalName>historialmedico</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>${spring-boot.version}</version> <!-- Aquí se usa la propiedad definida -->
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
-
 </project>

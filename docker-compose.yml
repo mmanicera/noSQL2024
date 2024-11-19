@@ -1,0 +1,30 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: springboot-app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongodb
+    networks:
+      - app-network
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    networks:
+      - app-network
+    volumes:
+      - mongodb-data:/data/db
+    restart: always  # Reiniciar MongoDB si se detiene
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mongodb-data:
