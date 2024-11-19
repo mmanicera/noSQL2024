@@ -109,3 +109,7 @@ Diseño
 Optamos por un diseño modular y escalable, utilizando dos colecciones: pacientes y registrosMedicos. La relación entre pacientes y registros médicos se realiza mediante la clave ciPaciente, permitiendo flexibilidad para manejar grandes volúmenes de datos sin limitar el tamaño de un solo documento.
 
 Este modelo es más flexible y escalable para un historial médico que puede crecer significativamente, permitiendo almacenar registros médicos en documentos separados.
+
+
+
+Aquí puede encontrar la colección de Postman compartida: https://www.postman.com/technical-physicist-43189748/workspace/historialmedico/collection/39798488-d4121800-79dd-448c-8d2e-38570b12272e?action=share&creator=39798488
